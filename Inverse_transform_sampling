@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+#replica dos dois exemplos da wikipedia
+
+rng = np.random.default_rng()
+
+num_pontos = 100000  #numero de pontos
+
+pontos = rng.random(num_pontos)  #gerar pontos de 0 a 1
+
+func_0 = np.log(1 - pontos)**2   #gerar a distribuicao do primeiro exemplo
+
+lambda_ = 1
+
+func_1 = -1/lambda_ * np.log(1 - pontos)  #gerar a distribuicao do segundo exemplo
+
+figure, axis = plt.subplots(1, 2)
+
+n_0, bins_0, patches_0 = axis[0].hist(func_0, 100, density=True, facecolor='b', alpha=0.75)  #histograma do primeiro exemplo
+
+n_1, bins_1, patches_1 = axis[1].hist(func_1, 100, density=True, facecolor='r', alpha=0.75)  #histograma do segundo exemplo
+
+axis[0].set_title('Histogram of example 1')
+axis[1].set_title('Histogram of example 2')
+
+plt.show()
