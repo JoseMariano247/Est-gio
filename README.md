@@ -1,2 +1,4 @@
 # Estagio
-#Conjunto de código feito ao longo do estagio
+#Conjunto de código feito ao longo do estágio do Golp-In sobre métodos estocásticos aplicados à interação entre plasmas e lasers.
+#Nestes notebooks são explorados métodos para a simulação da evolução da energia de eletrões em várias situações, como no caso da interação com um laser ou na presença de um campo magnético intenso. 
+#Podem ser encontrados neste notebook simulações da evolução da distribuição do potencial vetor de eletrões a interagir com um laser, implementações do Inverse Transform Sampling e Rejection Method aplicados aos fenómenos de Non-Linear Compton Scattering e Breit Wheeler Pair Production e simulações da evolução da energia de um feixe de eletrões usando o Fokker-Planck pusher, métodos de Monte-Carlo aplicados à equação de Boltzmann e resolução direta da equação de distribuição dos eletrões.
